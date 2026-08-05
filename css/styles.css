@@ -1,1 +1,1727 @@
-﻿
+﻿/* =========================
+
+   RESET
+
+========================= */
+
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+
+
+body {
+
+
+
+    font-family:
+
+    "Poppins",
+
+    "Segoe UI",
+
+    Arial,
+
+    sans-serif;
+
+
+
+    background:#faf6ef;
+
+
+
+    color:#3b2a20;
+
+
+
+    line-height:1.6;
+
+
+
+}
+
+
+
+
+
+/* =========================
+
+   HEADER
+
+========================= */
+
+
+
+
+
+header {
+
+
+
+    position:sticky;
+
+
+
+    top:0;
+
+
+
+    z-index:1000;
+
+
+
+    background:
+
+    rgba(255,255,255,0.9);
+
+
+
+    backdrop-filter:blur(15px);
+
+
+
+    padding:18px 8%;
+
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,.08);
+
+
+
+}
+
+
+
+
+
+
+
+nav {
+
+
+
+    display:flex;
+
+
+
+    justify-content:space-between;
+
+
+
+    align-items:center;
+
+
+
+}
+
+
+
+
+
+
+
+.logo img {
+
+
+
+    width:110px;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+.logo img:hover {
+
+
+
+    transform:scale(1.08);
+
+
+
+}
+
+
+
+
+
+
+
+nav ul {
+
+
+
+    list-style:none;
+
+
+
+    display:flex;
+
+
+
+    gap:35px;
+
+
+
+}
+
+
+
+
+
+
+
+nav a {
+
+
+
+    text-decoration:none;
+
+
+
+    color:#4c3729;
+
+
+
+    font-weight:600;
+
+
+
+    position:relative;
+
+
+
+}
+
+
+
+
+
+
+
+nav a::after {
+
+
+
+    content:"";
+
+
+
+    position:absolute;
+
+
+
+    bottom:-7px;
+
+
+
+    left:0;
+
+
+
+    width:0;
+
+
+
+    height:3px;
+
+
+
+    background:#c08b55;
+
+
+
+    transition:.3s;
+
+
+
+}
+
+
+
+
+
+
+
+nav a:hover::after {
+
+
+
+    width:100%;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+
+   HERO
+
+========================= */
+
+
+
+
+
+.hero {
+
+    min-height: 85vh;
+
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+
+    text-align: center;
+
+    color: white;
+
+
+
+    padding: 40px 20px;
+
+
+
+    background:
+
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+
+        url("img/cafe.jpg");
+
+
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+
+
+
+.hero h1 {
+
+
+
+
+
+    font-size:
+
+
+
+    clamp(40px,5vw,70px);
+
+
+
+
+
+    margin-bottom:20px;
+
+
+
+
+
+    font-weight:800;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.hero p {
+
+
+
+
+
+    font-size:22px;
+
+
+
+    margin-bottom:40px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.cta-button {
+
+
+
+
+
+    background:#c08b55;
+
+
+
+
+
+    color:white;
+
+
+
+
+
+    padding:15px 40px;
+
+
+
+
+
+    border-radius:50px;
+
+
+
+
+
+    text-decoration:none;
+
+
+
+
+
+    font-weight:bold;
+
+
+
+
+
+    transition:.3s;
+
+
+
+
+
+    box-shadow:
+
+
+
+    0 10px 30px rgba(0,0,0,.3);
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.cta-button:hover {
+
+
+
+
+
+    background:#8f5d32;
+
+
+
+
+
+    transform:translateY(-5px);
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+
+   MENU
+
+========================= */
+
+
+
+
+
+.menu {
+
+
+
+
+
+    padding:100px 8%;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.menu h2 {
+
+
+
+
+
+    text-align:center;
+
+
+
+
+
+    font-size:42px;
+
+
+
+
+
+    margin-bottom:60px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.menu-sections {
+
+
+
+
+
+    display:flex;
+
+
+
+
+
+    flex-direction:column;
+
+
+
+
+
+    gap:80px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.menu-category h3 {
+
+
+
+
+
+    font-size:32px;
+
+
+
+
+
+    margin-bottom:25px;
+
+
+
+
+
+    color:#8b5e34;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* HORIZONTAL SCROLL */
+
+
+
+
+
+.menu-grid {
+
+
+
+
+
+    display:flex;
+
+
+
+
+
+    gap:25px;
+
+
+
+
+
+    overflow-x:auto;
+
+
+
+
+
+    scroll-behavior:smooth;
+
+
+
+
+
+    padding:20px 5px 30px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.menu-grid::-webkit-scrollbar {
+
+
+
+
+
+    height:8px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.menu-grid::-webkit-scrollbar-track {
+
+
+
+
+
+    background:#eadbc8;
+
+
+
+
+
+    border-radius:20px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.menu-grid::-webkit-scrollbar-thumb {
+
+
+
+
+
+    background:#b88955;
+
+
+
+
+
+    border-radius:20px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* CARD */
+
+
+
+
+
+.menu-card {
+
+
+
+
+
+    flex:0 0 auto;
+
+
+
+
+
+    width:230px;
+
+
+
+
+
+    background:white;
+
+
+
+
+
+    border-radius:25px;
+
+
+
+
+
+    overflow:hidden;
+
+
+
+
+
+    cursor:pointer;
+
+
+
+
+
+    box-shadow:
+
+
+
+
+
+    0 15px 35px rgba(0,0,0,.1);
+
+
+
+
+
+    transition:.35s;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.menu-card:hover {
+
+
+
+
+
+    transform:translateY(-12px);
+
+
+
+
+
+    box-shadow:
+
+
+
+
+
+    0 25px 50px rgba(0,0,0,.18);
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.menu-card img {
+
+
+
+
+
+    width:100%;
+
+
+
+
+
+    height:220px;
+
+
+
+
+
+    object-fit:cover;
+
+
+
+
+
+    transition:.4s;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.menu-card:hover img {
+
+
+
+
+
+    transform:scale(1.08);
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.menu-card p {
+
+
+
+
+
+    padding:20px;
+
+
+
+
+
+    text-align:center;
+
+
+
+
+
+    font-size:18px;
+
+
+
+
+
+    font-weight:700;
+
+
+
+
+
+    color:#4c3729;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+
+   ABOUT
+
+========================= */
+
+
+
+
+
+.about {
+
+
+
+
+
+    padding:100px 10%;
+
+
+
+
+
+    text-align:center;
+
+
+
+
+
+    background:#eee0cf;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.about h2 {
+
+
+
+
+
+    font-size:40px;
+
+
+
+
+
+    margin-bottom:20px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.about p {
+
+
+
+
+
+    max-width:800px;
+
+
+
+
+
+    margin:auto;
+
+
+
+
+
+    font-size:18px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+
+   CONTACT
+
+========================= */
+
+
+
+
+
+.contact {
+
+
+
+
+
+    padding:100px 10%;
+
+
+
+
+
+    text-align:center;
+
+
+
+
+
+    background:
+
+
+
+
+
+    linear-gradient(
+
+
+
+    135deg,
+
+
+
+    #3b2a20,
+
+
+
+    #68452d
+
+
+
+    );
+
+
+
+
+
+    color:white;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.contact h2 {
+
+
+
+
+
+    font-size:40px;
+
+
+
+
+
+    margin-bottom:20px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+
+   FOOTER
+
+========================= */
+
+
+
+
+
+footer {
+
+
+
+
+
+    background:#241710;
+
+
+
+
+
+    color:white;
+
+
+
+
+
+    text-align:center;
+
+
+
+
+
+    padding:25px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+
+   IMAGE POPUP
+
+========================= */
+
+
+
+
+
+.image-overlay {
+
+
+
+
+
+    position:fixed;
+
+
+
+
+
+    inset:0;
+
+
+
+
+
+    display:flex;
+
+
+
+
+
+    align-items:center;
+
+
+
+
+
+    justify-content:center;
+
+
+
+
+
+    background:
+
+
+
+    rgba(0,0,0,.85);
+
+
+
+
+
+    backdrop-filter:blur(12px);
+
+
+
+
+
+    opacity:0;
+
+
+
+
+
+    visibility:hidden;
+
+
+
+
+
+    transition:.3s;
+
+
+
+
+
+    z-index:2000;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.image-overlay.active {
+
+
+
+
+
+    opacity:1;
+
+
+
+
+
+    visibility:visible;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.image-overlay-content {
+
+
+
+
+
+    max-width:90%;
+
+
+
+
+
+    text-align:center;
+
+
+
+
+
+    animation:popup .3s ease;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@keyframes popup {
+
+
+
+
+
+    from {
+
+
+
+        transform:scale(.7);
+
+
+
+        opacity:0;
+
+
+
+    }
+
+
+
+
+
+    to {
+
+
+
+        transform:scale(1);
+
+
+
+        opacity:1;
+
+
+
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.image-overlay-content img {
+
+
+
+
+
+    max-width:100%;
+
+
+
+
+
+    max-height:80vh;
+
+
+
+
+
+    border-radius:25px;
+
+
+
+
+
+    box-shadow:
+
+
+
+    0 30px 80px rgba(0,0,0,.5);
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.image-overlay-content p {
+
+
+
+
+
+    color:white;
+
+
+
+
+
+    margin-top:20px;
+
+
+
+
+
+    font-size:25px;
+
+
+
+
+
+    font-weight:bold;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.image-overlay-close {
+
+
+
+
+
+    position:absolute;
+
+
+
+
+
+    top:25px;
+
+
+
+
+
+    right:40px;
+
+
+
+
+
+    color:white;
+
+
+
+
+
+    font-size:45px;
+
+
+
+
+
+    cursor:pointer;
+
+
+
+
+
+    transition:.3s;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.image-overlay-close:hover {
+
+
+
+
+
+    transform:rotate(90deg);
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+
+   RESPONSIVE
+
+========================= */
+
+
+
+
+
+@media(max-width:768px){
+
+
+
+
+
+header {
+
+
+
+    padding:15px 20px;
+
+
+
+}
+
+
+
+
+
+
+
+nav ul {
+
+
+
+    gap:15px;
+
+
+
+    font-size:14px;
+
+
+
+}
+
+
+
+
+
+
+
+.hero {
+
+
+
+
+
+    min-height:70vh;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.menu {
+
+
+
+
+
+    padding:70px 5%;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.menu h2 {
+
+
+
+
+
+    font-size:32px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.menu-card {
+
+
+
+
+
+    width:200px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.menu-card img {
+
+
+
+
+
+    height:190px;
+
+
+
+
+
+}
+
+
+
+
+
+}

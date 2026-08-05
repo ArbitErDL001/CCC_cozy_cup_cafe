@@ -52,4 +52,4 @@ The image popup feature allows users to click menu items and view larger images 
 <img src="https://github.com/ArbitErDL001.png" width="150" style="border-radius:50%;">
 
 **Name:** ΛΞDL
-**Email:** your-email@example.com
+**Email:** 202380330@psu.palawan.edu.ph
